@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			
+			
+			<title>Action-Camera Captured Video (ACCV) Dataset</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="description" content="">
+			<meta name="author" content="">
+
+			<!-- Le styles -->
+			<link href="./accv-dataset_files/bootstrap.css" rel="stylesheet">
+			<style type="text/css">
+				body {
+					padding-bottom: 40px;
+				}
+
+				p {
+					style=font-size:16px;
+				}
+
+				.masthead {
+					width: 960px;
+					position: fixed;
+					top: 0;
+					left: 50%;
+					margin-left: -480px;
+					background-color: white;
+					border-bottom: 1px solid #eeeeee;
+					z-index: 255;
+				}
+
+				.masthead_small {
+					width: 100%;
+					margin-left: 0;
+					left: 0;
+				}
+
+				/* Custom container */
+				.container-narrow {
+					margin: 0 auto;
+					max-width: 960px;
+				}
+				.container-narrow > hr {
+					margin: 30px 0;
+				}
+
+				/* Main marketing message and sign up button */
+				.jumbotron {
+					margin: 60px 0;
+					text-align: center;
+				}
+				.jumbotron h1 {
+					font-size: 56px;
+					line-height: 1;
+				}
+				.jumbotron .btn {
+					font-size: 21px;
+					padding: 14px 24px;
+				}
+
+				/* Supporting marketing content */
+				.marketing {
+					margin: 60px 0;
+				}
+				.marketing p + h4 {
+					margin-top: 28px;
+				}
+
+			</style>
+			<link href="./accv-dataset_files/bootstrap-responsive.css" rel="stylesheet">
+			<link href="https://vjs.zencdn.net/4.1/video-js.css" rel="stylesheet">
+			<script src="https://vjs.zencdn.net/4.1/video.js"></script>
+		</head>
+
+		<body>
+
+			<div id="header_container" class="masthead">
+				<ul id="header_nav" class="nav nav-pills pull-right" style="margin-top: 20px; margin-right: 0px;">
+					<li><a class="scroll" href="#introduction">Introduction</a></li>
+					<li><a class="scroll" href="#download">Download</a></li>
+					<li><a class="scroll" href="#statistics">Statistics</a></li>
+					<li><a class="scroll" href="#example">Example</a></li>				
+				</ul>
+				<h2>
+					<span style="font-size:26px">Action-Camera Captured Video (ACCV) Dataset</span>
+				</h2>
+			</div>
+			<div id="header_empty" style="width:100%; height:75px;"> </div>
+			<div class="container-narrow">
+				<div id="home" class="jumbotron" style="margin-top:30px">
+					<div style="margin-left: 20px; ">
+					<table>
+					</table>
+					</div>
+					<div class="span10" style="margin-top: 20px">
+					<center>
+						<img src="./accv-dataset_files/frames.png" alt="video frames" width = 800>
+					</center>
+					<i>Few sample frames in ACCV Dataset.</i>
+					</div>
+				</div>
+
+				<hr>
+
+				<div id="introduction" class="row-fluid marketing" style="margin: 5px">
+					<div class="span12">
+						<h3>Introduction</h3>
+						<p style="font-size:16px">Accelerated by the tremendous increase in wearable camcorders such as GoPro cameras and Polaroid brands, action-camera captured videos (ACCVs) has been generated, published and spread explosively, becoming an indispensable part of today’s big data. As such, browsing and editing ACCVs is really a tedious job as many of the ACCVs are usually extremely unstructured and long-running. Therefore, video summarization, which produces a short summary of a fulllength video and ideally encapsulates its most informative parts, is becoming increasingly important for alleviating the problem of ACCVs browsing, editing and management.</p>
+						
+						<p style="font-size: 16px">As there are no available open ACCV datasets, we collect a new dataset from YouTube for video summarization on ACCVs. The dataset consists of 74 raw or little edited ACCVs mainly captured by HD GoPro cameras for 20 sports and travels related categories, each with a duration of 4 to 60 minutes.</p>
+					</div>
+				</div>
+
+				<hr>
+
+				<div id="download" class="row-fluid marketing" style="margin: 5px">
+					<div class="span12">
+						<h3>Download</h3>
+						<p style="font-size:16px">The video files or their YouTube links of the dataset can be obtained by sending a request email to us. Specifically, the researchers interested in ACCV Dataset should email to <a href="mailto:postmaster@accv-dataset.xyz">postmaster@accv-dataset.xyz</a> (Email title: ACCV Dataset data request) and guarantee that all the data is used for research only. We will then send you the download instructions at our discretion.</p>
+						<p style="font-size:16px">Please cite this paper if the dataset helps your research.</p>
+						<pre>  @article{ACCVDataset,
+	   Author  =  {Anonymous ICME submission},
+	   Title   =  {Action-Camera Captured Video Summarization by Exploring Frame Scoring and Video Structure},
+	   Journal =  {submitted to ICME 2017, under review},
+	   Year    =  {2017}}</pre>
+					</div>
+				</div>
+				<hr>
+				
+				<div id="statistics" class="row-fluid marketing" style="margin: 5px">
+					<h3>Statistics</h3>
+					<div class="span3" style="padding-left:0; margin-left:0;">
+							<p>Number of Videos: <span style="font-weight: normal">74</span></p>
+					</div>
+					<div class="span3" style="margin-left:0">
+							<p>Number of Categories: <span style="font-weight: normal">20</span></p>
+					</div>
+					<div class="span3" style="margin-left:0">
+							<p>Total Duration: <span style="font-weight: normal">14.6 hours</span></p>	
+					</div>
+					<div class="span3" style="width:240px;margin-left:0">
+							<p>Average Video Duration: <span style="font-weight: normal">11.8 minutes</span></p>
+					</div>
+					<div class='row image-div'>
+						<center>
+						<img src="./accv-dataset_files/class.png" alt="video classes" width = 800>
+						</center>
+					</div>
+					<br>
+					<div class='row image-div'>
+						<center>
+						<img src="./accv-dataset_files/length.png" alt="video durations" width = 700>
+						</center>
+					</div>
+				</div>
+				<hr>
+				<div id="example" class="row-fluid marketing" style="margin: 5px">
+					<div class="span12">
+						<h3>Example</h3>
+						<p style="font-size:16px">A example summary result generated by our method from <a href="https://www.youtube.com/watch?v=Cdv3Xuot2hk">a gopro video</a>.</p>
+						<div class='row video-div'>
+							<center>
+								<video class="center video-js vjs-default-skin" width="480" height="360"
+									data-setup='{"controls" : true, "autoplay" : false, "preload" : "auto", "loop": false, "poster": "./accv-dataset_files/first.png"}'>
+									<source id = "ref-clip-src" src="./accv-dataset_files/example.mp4" type="video/mp4">
+								</video>
+							</center>
+						</div>
+					</div>
+				</div>
+				<hr>
+				
+				<div class="footer">
+					<p class="text-right"><a class="scroll" href="#home">back to top</a></p>
+				</div>
+
+			</div> <!-- /container -->
+
+			<!-- Le javascript
+			================================================== -->
+			<!-- Placed at the end of the document so the pages load faster -->
+			<script src="./accv-dataset_files/jquery.js.download"></script>
+			<script src="./accv-dataset_files/bootstrap-transition.js.download"></script>
+			<script src="./accv-dataset_files/bootstrap-alert.js.download"></script>
+			<script src="./accv-dataset_files/bootstrap-modal.js.download"></script>
+			<script src="./accv-dataset_files/bootstrap-dropdown.js.download"></script>
+			<script src="./accv-dataset_files/bootstrap-scrollspy.js.download"></script>
+			<script src="./accv-dataset_files/bootstrap-tab.js.download"></script>
+			<script src="./accv-dataset_files/bootstrap-tooltip.js.download"></script>
+			<script src="./accv-dataset_files/bootstrap-popover.js.download"></script>
+			<script src="./accv-dataset_files/bootstrap-button.js.download"></script>
+			<script src="./accv-dataset_files/bootstrap-collapse.js.download"></script>
+			<script src="./accv-dataset_files/bootstrap-carousel.js.download"></script>
+			<script src="./accv-dataset_files/bootstrap-typeahead.js.download"></script>
+
+			<script src="./accv-dataset_files/highcharts.js.download"></script>
+			<script src="./accv-dataset_files/exporting.js.download"></script>
+			<script type="text/javascript" src="./accv-dataset_files/scroll.js.download"></script>
+			<script type="text/javascript" src="./accv-dataset_files/chart.js.download"></script>
+			<script type="text/javascript" src="./accv-dataset_files/stackchart.js.download"></script>
+			<script type="text/javascript">
+			$(function ()
+					{ 
+						$('img[rel=popover]').popover({
+  							html: true,
+  							placement: 'bottom',
+ 							trigger: 'hover',
+ 							content: function () {
+    							return '<img class=\"popover_img\"" />';
+  							}
+						}).on( "shown.bs.popover" , function() {
+							$( this ).parent().find( ".popover_img" ).eq( 0 )
+								.attr( "src" , $( this ).data( "image" ) )
+								.on( "load" , function() {
+									var left = $( this ).parent().parent().parent().offset().left ;
+									$('.popover').css( 'left' , left - ( $( this ).width() / 2 ) + 13 + 'px' ) ;
+								} ) ;
+ 						  	
+						} ) ;
+
+					});
+				function window_resize() {
+					var width = window.innerWidth ;
+					if ( width < 960 ) {
+						$( "#header_nav" ).addClass( "nav-stacked" ).css( "margin-right" , "20px" ) ;
+						$( "#header_container" ).addClass( "masthead_small" ) ;
+						$( "#header_empty" ).height( 185 ) ;
+						SCROLL_VAL = 190 ;
+					} else {
+						$( "#header_nav" ).removeClass( "nav-stacked" ).css( "margin-right" , "0" ) ;
+						$( "#header_container" ).removeClass( "masthead_small" ) ;
+						$( "#header_empty" ).height( 75 ) ;
+						SCROLL_VAL = 80 ;
+					}
+				}
+				var window_resize_handle = null ;
+				$( window ).resize( function() {
+					clearTimeout( window_resize_handle ) ;
+					window_resize_handle = setTimeout( window_resize , 20 ) ;
+				} ) ;
+				window_resize() ;
+			</script>
+
+	
+</body></html>
