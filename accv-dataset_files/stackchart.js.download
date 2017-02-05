@@ -1,0 +1,73 @@
+$(function () {
+    Highcharts.setOptions({
+        colors: ['#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
+    });
+    $('#statistics-stack-chart').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Number of Videos Per Class'
+        },
+        xAxis: {
+            categories: ['accordionPerformance', 'americanFootballAmateur', 'americanFootballProfessional', 'amusementPark', 'archery', 'armWrestling', 'assemblingABike', 'assemblingAComputer', 'babyCrawling', 'babyEatingSnack', 'badminton', 'barbellWorkout', 'baseball', 'basketballAmateur', 'basketballProfessional', 'beach', 'beatbox', 'bee', 'bikeTricks', 'biking', 'billiard', 'bird', 'birthday', 'boating', 'bowling', 'boxing', 'bridge', 'brushingTeeth', 'bumperCars', 'bungeeJumping', 'butterfly', 'camel', 'carAccidents', 'carExhibition', 'carRacing', 'carWashing', 'cardManipulation', 'cat', 'cathedralExterior', 'celloPerformance', 'chamberMusic', 'changingTires', 'chorus', 'classroom', 'cleaningAppliance', 'cleaningCarpet', 'cleaningFloor', 'cleaningWindows', 'cow', 'debate', 'decoratingChristmasTree', 'deliciousFood', 'desert', 'diningAtRestaurant', 'diving', 'dog', 'doingGraffiti', 'dolphin', 'dumbbellWorkout', 'egyptianPyramids', 'eiffelTower', 'elephant', 'eyeMakeup', 'faceMassage', 'dinnerAtHome', 'fashionShow', 'fencing', 'fireFighting', 'fireworksShow', 'fishing', 'flutePerformance', 'flyingKites', 'forest', 'fruitTreePruning', 'giraffe', 'golfing', 'gorilla', 'graduation', 'groupBanquet', 'groupDance', 'guitarPerformance', 'hairCutting', 'hairstyleDesign', 'hamster', 'harmonicaPerformance', 'hiking', 'horseRiding', 'housePlants', 'hulaHoop', 'iceSkating', 'insideAirplane', 'insideBus', 'insideTheOrientalPearlTVTower', 'kickingShuttlecock', 'kidsMakingFaces', 'kidsPlayingWithBlocks', 'kindergarten', 'kiteSurfing', 'knitting', 'laptop', 'lightning', 'makingBookmark', 'makingBracelets', 'makingCake', 'makingCeramicCraft', 'makingChineseDumplings', 'makingCoffee', 'makingCookies', 'makingEarrings', 'makingEggTarts', 'makingFestivalCards', 'makingFrenchFries', 'makingHotdog', 'makingIceCream', 'makingJuice', 'makingMilkTea', 'makingMixedDrinks', 'makingPaperFlowers', 'makingPaperPlane', 'makingPencilCases', 'makingPhoneCases', 'makingPhotoFrame', 'makingPizza', 'makingRings', 'makingSalad', 'makingSandwich', 'makingShorts', 'makingSnowman', 'makingSushi', 'makingTea', 'makingWallet', 'marathon', 'marchingBand', 'marriageProposal', 'mountain', 'mowing', 'nailArtDesign', 'outsideAirplane', 'outsideBus', 'outsideTheOrientalPearlTVTower', 'painting', 'panda', 'paperCutting', 'parade', 'parkingCars', 'parkour', 'penSpinning', 'pianoPerformance', 'picnic', 'pitchingATent', 'playground', 'playingChess', 'playingFrisbeeWithDog', 'playingFrisbeeWithPeople', 'playingMahjong', 'playingWithNunChucks', 'playingWithRemoteControlledAircraft', 'playingWithRemoteControlledCars', 'publicSpeech', 'pullUps', 'punchingBagWorkout', 'pushUps', 'rabbit', 'rafting', 'repairingMusicalInstruments', 'rhythmicGymnastics', 'river', 'roastingTurkey', 'rockBandPerformance', 'rockClimbing', 'rollerSkating', 'ropeSkipping', 'rowing', 'saxophonePerformance', 'sculpting', 'shavingBeard', 'shooting', 'shovelingSnow', 'showingFashionableHandbags', 'showingFashionableHighHeels', 'singingInKtv', 'singingOnStage', 'singleLensReflexCamera', 'sitUps', 'skateboarding', 'skiing', 'skydiving', 'smartphone', 'snake', 'snowballFight', 'soccerAmateur', 'soccerProfessional', 'socialDance', 'solarEclipse', 'soloDance', 'solvingMagicCube', 'sportsTrack', 'sprayPainting', 'streetFighting', 'sumoWrestling', 'sunset', 'surfing', 'swimmingAmateur', 'swimmingProfessional', 'symphonyOrchestraPerformance', 'tableTennis', 'tabletPC', 'taekwondo', 'taiChiChuan', 'tailgateParty', 'tajMahal', 'tattooing', 'temple', 'tennis', 'theGreatWall', 'theStatueOfLiberty', 'tornado', 'townHallMeeting', 'toyFigures', 'train', 'treadmill', 'trumpetPerformance', 'turtle', 'tyingATie', 'violinPerformance', 'volcanoEruption', 'walkingWithDog', 'washingAnInfant', 'washingDishes', 'waterfall', 'wearLipstick', 'weddingCeremony', 'weddingDance', 'weddingReception', 'wheelchairBasketball', 'wheelchairRace', 'wheelchairTennis', 'yoga', 'yoyoTricks'],
+            labels: {
+                enabled: false
+
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Number of Videos'
+            },
+            stackLabels: {
+                enabled: false,
+                style: {
+                    fontWeight: 'bold',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                }
+            }
+        },
+        legend: {
+            align: 'right',
+            x: -30,
+            verticalAlign: 'top',
+            y: 25,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false
+        },
+        tooltip: {
+            formatter: function () {
+                return '<b>' + this.x + '</b><br/>' + this.series.name + ': ' + this.y + '<br/>' +
+                    'Total Number: ' + this.point.stackTotal;
+            }
+        },
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: false,
+                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                    style: {
+                        textShadow: '0 0 3px black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: '>250.0s',
+            data: [88, 18, 13, 110, 76, 126, 148, 220, 7, 38, 196, 110, 9, 115, 76, 2, 235, 49, 30, 1, 79, 5, 14, 106, 7, 63, 14, 45, 68, 171, 6, 36, 399, 27, 51, 109, 201, 5, 19, 99, 178, 85, 152, 109, 88, 42, 13, 50, 29, 228, 86, 59, 79, 68, 26, 60, 102, 12, 20, 26, 52, 148, 580, 162, 8, 82, 94, 58, 241, 117, 58, 43, 46, 154, 17, 7, 40, 31, 11, 275, 157, 78, 261, 12, 104, 135, 14, 56, 78, 3, 79, 27, 16, 154, 11, 55, 79, 36, 246, 215, 53, 235, 283, 127, 319, 49, 132, 183, 316, 58, 175, 81, 43, 108, 148, 94, 52, 147, 161, 173, 176, 198, 107, 131, 140, 160, 177, 75, 171, 66, 194, 103, 424, 125, 121, 45, 271, 32, 38, 14, 250, 15, 39, 18, 34, 102, 106, 64, 32, 101, 4, 52, 22, 38, 20, 52, 100, 42, 164, 82, 52, 43, 37, 103, 141, 17, 165, 68, 151, 11, 36, 75, 78, 95, 41, 84, 54, 12, 147, 64, 51, 208, 130, 39, 80, 6, 62, 182, 105, 39, 66, 14, 100, 45, 191, 161, 6, 424, 22, 82, 61, 20, 48, 14, 131, 130, 298, 174, 277, 49, 31, 170, 51, 46, 13, 27, 50, 54, 598, 36, 34, 79, 3, 69, 117, 16, 27, 39, 32, 34, 457, 26, 30, 17, 58, 8, 12, 175, 33]
+        },{
+            name: '50.0 - 250.0s',
+            data: [396, 56, 39, 379, 234, 587, 157, 105, 191, 238, 334, 325, 98, 255, 136, 123, 524, 117, 155, 77, 164, 147, 135, 389, 94, 274, 94, 446, 499, 583, 138, 455, 158, 210, 111, 90, 364, 178, 75, 338, 134, 122, 482, 108, 294, 150, 112, 188, 219, 142, 321, 243, 295, 339, 166, 532, 202, 106, 101, 94, 188, 405, 218, 154, 78, 95, 308, 80, 401, 213, 187, 219, 116, 204, 200, 72, 366, 120, 58, 303, 278, 95, 141, 142, 296, 204, 172, 92, 314, 118, 266, 128, 120, 180, 191, 383, 163, 148, 229, 128, 154, 188, 160, 181, 378, 152, 211, 170, 217, 44, 76, 109, 73, 108, 225, 184, 194, 87, 376, 80, 97, 176, 121, 106, 173, 197, 133, 227, 175, 115, 95, 143, 94, 114, 255, 137, 162, 176, 82, 66, 154, 148, 86, 147, 185, 248, 314, 289, 74, 144, 122, 102, 179, 175, 66, 304, 172, 117, 111, 337, 197, 131, 310, 187, 154, 246, 436, 93, 192, 137, 183, 230, 265, 258, 104, 98, 232, 115, 142, 183, 254, 513, 118, 155, 324, 110, 145, 103, 369, 291, 264, 59, 457, 84, 620, 193, 152, 341, 139, 354, 258, 128, 323, 127, 121, 260, 198, 341, 294, 199, 136, 359, 160, 115, 123, 179, 126, 79, 287, 361, 180, 285, 104, 193, 318, 127, 79, 126, 146, 93, 203, 131, 189, 150, 126, 65, 58, 246, 377]
+        }, {
+            name: '<50.0s',
+            data: [103, 146, 140, 78, 75, 319, 18, 14, 122, 80, 177, 226, 193, 235, 125, 207, 120, 85, 183, 196, 127, 185, 165, 273, 194, 46, 139, 231, 128, 68, 185, 563, 39, 28, 84, 9, 22, 204, 69, 83, 6, 41, 35, 46, 34, 17, 67, 77, 207, 8, 80, 72, 276, 186, 352, 544, 15, 111, 103, 87, 169, 237, 1, 13, 41, 43, 105, 31, 180, 150, 28, 187, 57, 26, 202, 251, 166, 127, 41, 22, 29, 47, 2, 69, 107, 71, 121, 25, 298, 232, 22, 116, 128, 177, 250, 127, 33, 121, 17, 29, 124, 3, 8, 65, 26, 94, 26, 23, 5, 6, 3, 16, 13, 2, 35, 54, 8, 1, 17, 3, 3, 7, 25, 1, 13, 7, 2, 110, 24, 32, 0, 69, 4, 10, 163, 107, 2, 156, 97, 105, 19, 73, 12, 214, 56, 67, 341, 133, 31, 46, 205, 52, 142, 142, 40, 96, 90, 51, 20, 276, 41, 38, 178, 123, 9, 4, 433, 7, 15, 42, 85, 159, 215, 28, 5, 9, 278, 76, 7, 57, 133, 63, 5, 164, 381, 276, 21, 5, 238, 262, 440, 50, 64, 38, 43, 50, 581, 14, 52, 147, 293, 81, 564, 33, 19, 115, 17, 75, 75, 84, 143, 99, 89, 108, 124, 208, 16, 19, 11, 205, 136, 155, 115, 21, 37, 51, 56, 61, 44, 181, 13, 62, 101, 68, 60, 140, 51, 6, 143]
+        }	
+		]
+    });
+});
